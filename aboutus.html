@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>About Us</title>
+</head>
+<body>
+		<nav class="navbar navbar-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="index.html"><img src="img/logo1.png" class="img-fluid" height="auto" max-width="100%"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./blog.html"><span class="fa fa-list fa-lg"></span> Write Blog</a></li>
+						<li class="nav-item"><a class="nav-link" href="./showBlogs.html"><span class="fa fa-list fa-lg"></span> Display Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                </ul>  
+                <span class="navbar-text">
+		            <a class="signup"><span class="fa fa-user-o"></span> Sign up</a>
+		                            
+		        </span><br>
+		        <span class="navbar-text">
+		        	<a class="login"><span class="fa fa-sign-in"></span> Login</a>
+		        </span>
+            </div>
+            <!-- <span class="navbar-text">
+            <a class="signup"><span class="fa fa-user-o"></span> Sign up</a>
+            <a class="login"><span class="fa fa-sign-in"></span> Login</a>                
+        </span> -->
+		</div>
+	</nav>
+
+	<div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close">
+                        &times;
+                    </button>
+                </div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group col-sm-9">
+							<label class="sr-only" for="exampleInputEmail3">Email Address</label>
+					        <input type="email" class="form-control form-control-sm mr-1 fontAwesome" id="exampleInputEmail3" 
+					        placeholder="&#xf2bd;  abc@xyz.com">
+						</div>
+						<div class="form-group col-sm-9">
+					        <label class="sr-only" for="exampleInputPassword">Password</label>
+					        <input type="email" class="form-control form-control-sm mr-1 fontAwesome" id="exampleInputPassword" 
+					        placeholder="&#xf023;   Password">
+					    </div>
+					    <div class="col-sm-auto">
+					        <div class="form-check">
+					            <input class="form-check-input" type="checkbox">
+					            <label class="form-check-label"> Remember me</label>
+					        </div>
+					    </div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">Login</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="signupModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Sign Up</h4>
+                    <button type="button" class="close">
+                        &times;
+                    </button>
+                </div>
+				<div class="modal-body">
+					<form action="/signin" method="post">
+						<div class="form-group col-sm-9">
+							<label class="sr-only" for="exampleInputEmail3">Email Address</label>
+					        <input type="email" name="email" class="form-control form-control-sm mr-1 fontAwesome" id="exampleInputEmail3" 
+					        placeholder="&#xf2bd;  abc@xyz.com">
+						</div>
+						<div class="form-group col-sm-9">
+					        <label class="sr-only" for="exampleInputPassword">Password</label>
+					        <input type="password" name="password" class="form-control form-control-sm mr-1 fontAwesome" id="exampleInputPassword" 
+					        placeholder="&#xf023;   Password">
+					    </div>
+					    <div class="col-sm-auto">
+					        <div class="form-check">
+					            <input class="form-check-input" type="checkbox">
+					            <label class="form-check-label"> Remember me</label>
+					        </div>
+					    </div>
+					
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-primary" value="Submit">Login</button>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row row-header align-items-center">
+			<div class="col-12" id="vision-text">
+				<h1>Who Are We!!<hr></h1>
+			</div>
+			<div class="col-12 col-sm-6">
+				<h4>Our Vision</h4>
+				<ul>
+					<li>To spread the power of optimism.</li>
+					<li>To spread individual's thought process about the world.</li>
+					<li>To inspire and rekindle young minds.</li>
+					<li>To help young minds discover, develop & start their own blog brands.</li>
+				</ul>
+				<hr>
+			</div>
+
+			<div class="col-12 col-sm-6" id="vision-text">
+				<div class="card">
+					<h4 class="card-header bg-primary text-white">Facts</h4>
+					<div class="card-body">
+                        <dl class="row">
+                            <dt class="col-6">Started</dt>
+                            <dd class="col-6">5 March. 2015</dd>
+                            <dt class="col-6">Major Stake Holder</dt>
+                            <dd class="col-6">Wordpress Inc.</dd>
+                            <dt class="col-6">Last Year's Turnover</dt>
+                            <dd class="col-6">$1,250,375</dd>
+                            <dt class="col-6">Employees</dt>
+                            <dd class="col-6">2000</dd>
+                        </dl>
+                    </div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="row row-header align-items-center">
+				<div class="col-12 order-sm-last" id="history-text">
+					<h4>Our History</h4>
+					<p>We started in 2015 and quickly established ourself as one of the leading blogging company and since then we have produced many great bloggers.
+					At first this company was started by two brothers with having a vision of empowering the world with blogs by providing 
+					each individual a global platform to share their thoughts on the current situation of world. Now we have more than 2,000
+					employes and around 10 offices spreading over the globe.</p>
+				</div>
+			</div>
+			<hr>
+		</div>
+		
+		<div class="row row-content">
+			<div class="col-12 col-sm-9">
+				<div class="card">
+					<!-- <h4 class="card-header bg-primary text-white">Figures</h4> -->
+					<div class="card-body">
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+						  <li class="nav-item">
+						    <a class="nav-link active" id="owner-tab" data-toggle="tab" href="#owner" role="tab">Owner</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" id="ceo-tab" data-toggle="tab" href="#ceo" role="tab">CEO</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" id="cto-tab" data-toggle="tab" href="#cto" role="tab">CTO</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" id="cmo-tab" data-toggle="tab" href="#cmo" role="tab">CMO</a>
+						  </li>
+						</ul>
+						<div class="tab-content" id="myTabContent">
+						  	<div class="tab-pane fade show active" id="owner" role="tabpanel">
+						  		<p>Rohit and Mohit Aggarwal are the two brothers started their journey as computer science students in college. On 2005 they made a small thought share platform for college where every student can write and post articles on their favourite topics and present their views over the situation. This small project soon starts getting attention from many other colleges and gradually becomes a global platform.</p>
+						  	</div>
+						  	<div class="tab-pane fade" id="ceo" role="tabpanel" aria-labelledby="profile-tab">
+							  	<p>Suresh Sen was the batchmate of Mohit Aggarwal and was the first person to join WordBlog. He has contributed significantly in developing WordBlog with new innovative steps. He has added many feature to WordBlog like Onsite blogging, Blogging with friends etc.</p>
+							</div>
+						  	<div class="tab-pane fade" id="cto" role="tabpanel" aria-labelledby="contact-tab">
+							  	<p>
+							  		Rahul Singh is a brilliant engineer who was previously working as project manager in a different tech company. He is a curious and a fascinating guy with a hunger for new technology and innovation. He has helped in building and enhancing the user interface and serverside development.
+							  	</p>  
+							</div>
+						  	<div class="tab-pane fade" id="cmo" role="tabpanel" aria-labelledby="contact-tab">
+						  		<p>Rishav Arya was a senior of Mohit and helped him to spread his small project to many colleges. He was the second guy to join WordBlog. He also helped in hiring many new workers and is the man behind making this a global platform through his marketing skills.</p>
+						  	</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<footer class="footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">  <!-- this class removes the bullets from list-->
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
+                        <li><a href="./blog.html">Write Blog</a></li>
+                        <li><a href="./contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+		              Sector 5, Salt Lake<br>
+		              Kolkata, West Bengal<br>
+		              INDIA<br>
+		              <i class="fa fa-phone fa-lg"></i>: +91 1234 5678<br>
+		              <i class="fa fa-fax fa-lg"></i>: +91 8765 4321<br>
+		              <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:wordblog@blog.net">wordblog@blog.net</a>
+		           </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+						<h2>Follow us</h2>
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>© Copyright 2015 WordBlog</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+	
+	<!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+</body>
+</html>
